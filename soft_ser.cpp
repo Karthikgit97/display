@@ -16,6 +16,4 @@ void loop() // run over and over
 {
   if (mySerial.available())
     Serial.write(mySerial.readString());
-  if (Serial.available())
-    mySerial.write(Serial.read());
 }
